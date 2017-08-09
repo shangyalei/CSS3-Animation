@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            /*过渡 其实就是定时器*/
+            transition:all 1s;
+        }
+        body img:nth-child(1):hover{
+
+            transform:rotateX(180deg);
+        }
+        body img:nth-child(2):hover{
+
+            transform:rotateY(180deg);
+        }
+        body img:nth-child(3):hover{
+            transform:rotateZ(360deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+
+变形：
+transform:
+    角度转换：rotate  rotateX()  rotateY();
+
+水运动就在谁身上加transition
+
+all：表示所有元素  1s表示运动时间  ease-in/ease-out/ease-in-out  延迟
+
+transition-property 让哪个属性来动
+transition-duration 运动时间
+transition-delay 延迟时间
+
+不写运动形式，默认linear
+
+JS语法：object.transition='width 2s';
+
+
+-->
+
+
+<img src="../images/X.jpg" alt="">
+<img src="../images/Y.jpg" alt="">
+<img src="../images/Z.gif" alt="">
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        img{
+            transition: all 1s linear;
+        }
+
+        img:nth-child(1){
+            transform: translateX(0) scale(0.5) ;
+
+        }
+        img:nth-child(1):hover{
+            transform:translateX(10px) scale(1.2);
+
+        }
+        img:nth-child(2){
+            transform: translateX(0);
+
+        }
+
+        img:nth-child(2):hover{
+            transform: translateX(400px);
+        }
+
+        img:nth-child(3){
+            transform: translateY(0);
+
+        }
+        img:nth-child(3):hover{
+            transform:translateY(100px);
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<img src="../images/stu1.jpg" alt="">
+<img src="../images/stu2.jpg" alt="">
+<img src="../images/stu3.jpg" alt="">
+
+
+
+
+</body>
+</html>

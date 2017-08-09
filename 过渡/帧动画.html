@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+            margin-left:500px;
+            background:#ff4400;
+            /*依次：动画名称、运动时间、运动方式、延迟时间、运动次数(infinite无限次)*/
+            animation:  .5s ease-in-out 1s infinite;
+            /*animation-name: move;*/
+        }
+        @keyframes move {
+            0%{
+                width:200px;
+            }
+            100%{
+                width:500px;
+                background:blue;
+            }
+        }
+
+        img{
+            margin-left: 10px;
+            animation:zhu 1s linear infinite;
+        }
+        @-webkit-keyframes zhu {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--
+transition和animation前者需要事件触发，后者不用
+
+-->
+
+
+
+<div></div>
+
+
+<img src="../images/fengche.jpg" alt="">
+
+<script>
+
+    var div = document.querySelector('div');
+
+    div.onclick=function(){
+        this.style.animationName='move';
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
